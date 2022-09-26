@@ -35,10 +35,9 @@ public class Main {
         int num = sc.nextInt();
 
         int primeNr = 2;
-
         int i = 0;
-        while (!isPrime(num)){
 
+        while (!isPrime(num)){
             if (num % primeNr == 0){
                 num /= primeNr;
                 primeArray[i++] = primeNr;
@@ -46,7 +45,6 @@ public class Main {
                 primeNr = getNextPrime(primeNr);
             }
         }
-
         for (int j = 0; j < i; j++) {
             System.out.print(" "+primeArray[j]);
         }
