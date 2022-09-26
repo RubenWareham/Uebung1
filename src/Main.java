@@ -39,7 +39,7 @@ public class Main {
         int i = 0;
         while (!isPrime(num)){
 
-            if (num % primeNr==0){
+            if (num % primeNr == 0){
                 num /= primeNr;
                 primeArray[i++] = primeNr;
             }else{
